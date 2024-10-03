@@ -76,16 +76,20 @@ If you need to customize the configuration files, you can use the eject script. 
 
 ## Features
 
-1. navigation: Simple bar navigation, allowing the user to switch between pages.
+navigation: Simple bar navigation, allowing the user to switch between pages.
+
 ![photo of the application's nav bar](./documentation/img/nav-bar.png)
 
-2. limit number of country displayed: Input type range, allowing the user to limit or not the number of country displayed.
+limit number of country displayed: Input type range, allowing the user to limit or not the number of country displayed.
+
 ![photo of the application's input range](./documentation/img/input-range.png)
 
-3. Filter country by continent: Input type radio, allowing the user to display contry from a specific continent.
+Filter country by continent: Input type radio, allowing the user to display contry from a specific continent.
+
 ![photo of the application's inputs radio](./documentation/img/input-radio.png)
 
-4. Reset filter: Button, allowing the user to reset the continent filter and so displaying all countries no matter the continer.
+Reset filter: Button, allowing the user to reset the continent filter and so displaying all countries no matter the continer.
+
 ![photo of the application's inputs radio](./documentation/img/button.png)
 
 ## Usage
