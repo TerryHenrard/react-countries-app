@@ -1,70 +1,148 @@
-# Getting Started with Create React App
+# English course 04/10/2024
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [Installation](#installation)
+3. [Project Structure](#project-structure)
+4. [Available Scripts](#available-scripts)
+5. [Features](#features)
+6. [Usage](#usage)
+7. [Testing](#testing)
+8. [Contributing](#contributing)
+9. [License](#license)
+
+---
+
+## Introduction
+
+It's a React-based application designed to provide information on every country in the world. Information such as name, capital and number of inhabitants. This documentation provides a guide to setting up, using and contributing to the project.
+
+## Installation
+
+To install the project dependencies, run the following commands:
+
+```bash
+1. git clone https://github.com/TerryHenrard/react-countries-app
+2. cd react-countries-app
+3. npm install (or npm i)
+```
+
+### Prerequisites
+
+```bash
+1. Node.js (version 14.0 or higher)
+2. npm or pnpm or yarn
+```
+
+## project-structure
+
+```bash
+/react-countries-app
+│
+├── /public
+│   └── index.html          # Base HTML file
+│
+├── /src
+│   ├── /assets             # All assets used in
+│   │   ├── /fonts
+│   │   └── /img
+│   ├── /components         # Reusable components
+│   ├── /pages              # Application pages
+│   ├── /styles             # SCSS styles
+│   │   └── /components
+│   ├── App.js              # Main application component
+│   └── index.js            # Entry point of the app
+│
+├── package.json            # Dependencies and scripts
+└── README.md               # Project documentation
+```
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can run the following scripts:
 
-### `npm start`
+`npm start`
+Runs the app in development mode. Open <http://localhost:3000> to view it in the browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+`npm test`
+Launches the test runner in interactive watch mode. Add tests in the /tests folder.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+`npm run build`
+Builds the app for production to the build folder. This will bundle and optimize your app for deployment.
 
-### `npm test`
+`npm run eject`
+If you need to customize the configuration files, you can use the eject script. ==Note: this action is irreversible.==
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+1. navigation: Simple bar navigation, allowing the user to switch between pages.
+![photo of the application's nav bar](./documentation/img/nav-bar.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. limit number of country displayed: Input type range, allowing the user to limit or not the number of country displayed.
+![photo of the application's input range](./documentation/img/input-range.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Filter country by continent: Input type radio, allowing the user to display contry from a specific continent.
+![photo of the application's inputs radio](./documentation/img/input-radio.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Reset filter: Button, allowing the user to reset the continent filter and so displaying all countries no matter the continer.
+![photo of the application's inputs radio](./documentation/img/button.png)
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Once the app is running, follow these steps to use the core features:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Navigate to accueil (default page) by clicking on __==acceuil==__.
+2. To limit the number of country displayed grab the cursor on the nav bar and move it right or left.
+3. To filter the country by continent, simply click on the continent you want.
+4. To reset the filter, click on the button __=="Annuler la recherche"==__
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Testing
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The application uses Jest to ensure code quality. To run the tests:
 
-## Learn More
+```bash
+npm test
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Write your test files under the /tests directory, following this structure:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+/tests
+├── /components
+├── /pages
+└── App.test.js
 
-### Code Splitting
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contributing
 
-### Analyzing the Bundle Size
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To contribute:
 
-### Making a Progressive Web App
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/your-feature`)
+3. Make your changes
+4. Push to your branch (`git push origin feature/your-feature`)
+5. Open a pull request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
 
-### Advanced Configuration
+This project is licensed under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Key Sections Breakdown
 
-### Deployment
+- __Introduction__: Explains what the app does.
+- __Installation__: Shows how to set up the project locally.
+- __Project Structure__: Brief overview of the folder structure.
+- __Available Scripts__: Lists essential `npm` scripts for development.
+- __Environment Variables__: How to configure environment variables.
+- __Features__: List of key app features.
+- __Usage__: How to use the app and navigate through it.
+- __Testing__: Instructions for running tests.
+- __Deployment__: Steps to deploy the app to a live environment.
+- __Contributing__: Guidelines for contributing to the project.
+- __License__: States the project’s licensing information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Let me know if you'd like to modify or expand any specific section!
